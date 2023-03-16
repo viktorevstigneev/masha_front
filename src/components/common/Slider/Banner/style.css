@@ -1,0 +1,86 @@
+/* editor */
+
+.editor__block {
+	position: relative;
+	/* border: 3px dashed rgb(61, 61, 61); */
+	border-radius: 10px;
+	position: relative;
+	margin-top: 40px;
+
+	height: 200px;
+}
+.editor__avatar {
+	width: 100%;
+	height: 100%;
+}
+
+.editor__label {
+	display: block;
+	height: 150px;
+	width: 100%;
+}
+
+.banner__container {
+	width: 100%;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.editor__drop {
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	color: rgb(204, 149, 29);
+	font-weight: 500;
+}
+
+.editor__input {
+	width: 100%;
+	height: 100%;
+	color: transparent;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	/* height: 200px; */
+}
+
+.editor__input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.editor__input::before {
+	content: 'Browse...';
+	color: rgb(226, 226, 226);
+	display: inline-block;
+	background: rgb(51, 51, 51);
+	border: 1px solid #999;
+	border-radius: 100px;
+	padding: 10px 60px;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 10pt;
+
+	position: absolute;
+	top: 40%;
+	left: 35%;
+}
+
+.add__banner {
+	z-index: 10000000000;
+	border: none;
+	background: rgb(31, 31, 31);
+	border-radius: 100px;
+	padding: 10px 20px;
+	cursor: pointer;
+	color: white;
+	position: absolute;
+	left: 45%;
+	top: 60%;
+}
+
+.banner__delete{
+	margin: 0;
+	cursor: pointer;
+	font-size: 30px;
+	color: red;
+}
