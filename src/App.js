@@ -3,10 +3,13 @@ import React, { lazy, Suspense, useState } from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/common/Header';
 
-// const SignInPage = lazy(() => import('./components/pages/SignIn'));
+const SignInPage = lazy(() => import('./components/pages/SignIn'));
 // const SignUpPage = lazy(() => import('./components/pages/Signup'));
 const MainPage = lazy(() => import('./components/pages/MainPage'));
 const ProjectPage = lazy(() => import('./components/pages/ProjectPage'));
+const AboutPage = lazy(() => import('./components/pages/AboutPage'));
+const Spinner = lazy(() => import('./components/common/Spinner'));
+const ContactPage = lazy(() => import('./components/pages/ContactPage'));
 
 const HousesPage = lazy(() => import('./components/pages/HousesPage'));
 const ApartmentsPage = lazy(() => import('./components/pages/ApartmentsPage'));
@@ -18,7 +21,6 @@ const RuralVillaPage = lazy(() => import('./components/pages/RuralVillaPage'));
 const BarnHousePage = lazy(() => import('./components/pages/BarnHousePage'));
 const BeachHousePage = lazy(() => import('./components/pages/BeachHousePage'));
 const GreenHousePage = lazy(() => import('./components/pages/GreenHousePage'));
-
 
 // apartments ---------------
 const CozyApartPage = lazy(() => import('./components/pages/CozyApartPage'));
@@ -38,24 +40,21 @@ const ModernBathroomPage = lazy(() => import('./components/pages/ModernBathroomP
 const GrungeBathroomPage = lazy(() => import('./components/pages/GrungeBathroomPage'));
 const BrightBathroomPage = lazy(() => import('./components/pages/BrightBathroomPage'));
 
-
-
-// const ClothesPage = lazy(() => import('./components/pages/ClothesPage'));
+const ClothesPage = lazy(() => import('./components/pages/ClothesPage'));
 // const ProfilePage = lazy(() => import('./components/pages/ProfilePage'));
-// const AdminPage = lazy(() => import('./components/pages/AdminPanel'));
+const AdminPage = lazy(() => import('./components/pages/AdminPanel'));
 // const CartPage = lazy(() => import('./components/pages/CartPage'));
-// const ContactPage = lazy(() => import('./components/pages/ContactPage'));
 
 function App() {
-	
 	return (
 		<BrowserRouter>
 			<Header />
-			<Suspense fallback={'load'}>
+			<Suspense fallback={<Spinner />}>
 				<Routes>
-					{/* <Route path="/" element={<SignInPage />} />
-					<Route path="/signup" element={<SignUpPage />} /> */}
 					<Route path="/" element={<MainPage />} />
+					<Route path="/signin" element={<SignInPage />} />
+					{/* <Route path="/signup" element={<SignUpPage />} /> */}
+
 					<Route path="/projects" element={<ProjectPage />} />
 
 					<Route path="/houses" element={<HousesPage />} />
@@ -86,12 +85,13 @@ function App() {
 					<Route path="/modernbath" element={<ModernBathroomPage />} />
 					<Route path="/grungebath" element={<GrungeBathroomPage />} />
 					<Route path="/brightbath" element={<BrightBathroomPage />} />
-					{/* <Route path="/clothes" element={<ClothesPage />} />
-						<Route path="/profile" element={<ProfilePage />} />
-						<Route path="/admin" element={<AdminPage />} /> */}
-					{/* <Route path="/cart" element={<CartPage />} /> */}
-					{/*
-					<Route path="/contact" element={<ContactPage />} /> */}
+
+					{/* <Route path="/profile" element={<ProfilePage />} /> */}
+					<Route path="/admin" element={<AdminPage />} />
+					<Route path="/works" element={<ClothesPage />} />
+					<Route path="/about" element={<AboutPage />} />
+
+					<Route path="/contact" element={<ContactPage />} />
 				</Routes>
 				{/* <Navigate  to="/main" /> */}
 			</Suspense>

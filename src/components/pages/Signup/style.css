@@ -1,23 +1,36 @@
+.auth{
+	background: url('../../../img/proj_bg.png') 50% no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding-bottom: 70px;
+}
+
 .auth__title {
 	text-align: center;
 	font-size: 28px;
+	margin-top: 0;
+	color: #fff;
+	font-weight: 500;
 }
 
 .auth__block {
-	width: 80%;
+	width: 50%;
+
+	height: 100%;
 	margin: 0 auto;
 	display: flex;
-	/* justify-content: space-around; */
+
 	z-index: 1000;
 	overflow: hidden;
 }
 
 .auth__form {
 	padding: 20px;
-	width: 40%;
+	width: 100%;
 }
 
 .auth__label {
+	color: #fff;
 	margin-top: 10px;
 	display: block;
 	text-transform: uppercase;
@@ -27,43 +40,36 @@
 	display: block;
 	margin-top: 20px;
 	padding: 10px;
-	width: 80%;
+	width: 90%;
 	border-radius: 5px;
 	border: 1px solid #d1a379;
 }
 
 .auth__button {
-	background: #d1a379;
+	background: #fff;
+	border: 1px solid #000;
 	margin-top: 20px;
 	display: block;
-	padding: 10px 30px;
-	color: #fff;
+	width: 95%;
+	padding: 10px;
+	color: #000000;
 	font-size: 22px;
-	border: none;
-	box-shadow: 4px 8px 0px 0px rgba(122, 122, 122, 0.473);
+
 	transition: 1s;
 	cursor: pointer;
 }
 
 .auth__button:hover {
-	background: #f38014;
-	color: #fff8ff;
+	background: #000000;
+	color: #ffffff;
 }
 
 .auth__link {
 	display: block;
-	color: rgb(255, 153, 0);
+	color: rgb(255, 0, 0);
 	text-decoration: none;
 	margin-top: 20px;
+	font-weight: 600;
 	font-size: 18px;
 }
 
-.auth__img {
-	width: 400px;
-	height: 450px;
-	position: absolute;
-	right: 150px;
-	top: 0;
-	top:-100px;
-	transform: rotate(45deg);
-}

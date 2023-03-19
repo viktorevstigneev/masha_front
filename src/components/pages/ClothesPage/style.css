@@ -105,14 +105,14 @@
 }
 
 .open__img {
-	width: 50%;
+	width: 100%;
 }
 
 .open__container{
-	display: flex;
+	/* display: flex; */
 }
 .open__description {
-	font-family: Pompiere;
+
 	font-weight: 600;
 
 	font-size: 24px;
@@ -121,7 +121,7 @@
 }
 .open__price,
 .open__cart, .open__cart-no {
-	font-family: Pompiere;
+
 	font-weight: 600;
 
 	font-size: 24px;

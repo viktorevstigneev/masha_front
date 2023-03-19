@@ -14,19 +14,12 @@ import i6 from '../../../img/6.png';
 import me from '../../../img/me_about.png';
 import serv1 from '../../../img/serv1.png';
 import serv2 from '../../../img/serv2.png';
-import axios from 'axios';
 import { API_URL } from '../../../constants';
+import axios from 'axios';
 
 const MainPage = () => {
-	const [bannerData, setBannerData] = useState();
-
 	useEffect(() => {
-		const getBenners = async () => {
-			const responseData = await axios
-				.get(`${API_URL}/banner`, { withCredentials: true })
-				.then((response) => setBannerData(response.data));
-		};
-		getBenners();
+		// window.location.reload()
 	}, []);
 	return (
 		<>
@@ -53,7 +46,7 @@ const MainPage = () => {
 
 					<div className="home__about">
 						<div className="about__left">
-							<h2 className="about__title">About Me</h2>
+							<h2 className="about__titlee">About Me</h2>
 
 							<p className="about__description">
 								Creating a design of various kinds is an art. Behind each of my work is a lot of time and effort that I
@@ -62,7 +55,7 @@ const MainPage = () => {
 							<p className="about__description">
 								Never force yourself to do something you don't want to. The main thing is to find yourself
 							</p>
-							<a className="about__button" href="#f">
+							<a className="about__button" href="/about">
 								Learn more
 							</a>
 						</div>
@@ -81,6 +74,36 @@ const MainPage = () => {
 								<p className="services__caption">Small Space Makeover</p>
 							</div>
 						</div>
+					</div>
+
+					<div className="home__subscribe">
+						<form
+							action=""
+							className="subscribe__form"
+							encType="multipart/form-data"
+							// method="POST"
+							onSubmit={async (evt) => {
+								evt.preventDefault();
+
+								const formData = new FormData(evt.target);
+
+								const responseData = await axios({
+									method: 'POST',
+									url: `${API_URL}/banner`,
+									data: formData,
+									withCredentials: true,
+								});
+								window.location.reload();
+							}}
+						>
+							<label htmlFor="" className="subscribe__label">
+								Follow my updates
+							</label>
+							<input type="email" name="email" className="subscribe__input" placeholder="email" required />
+							<button type="submit" className="subscribe__btn">
+								Follow
+							</button>
+						</form>
 					</div>
 				</div>
 			</main>

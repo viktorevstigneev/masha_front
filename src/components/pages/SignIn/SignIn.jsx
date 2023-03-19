@@ -3,7 +3,7 @@ import { Link, Navigate } from 'react-router-dom';
 
 import { signIn } from './utils';
 import { API_URL } from '../../../constants';
-import SignInImg from '../../../img/logo.png';
+import SignInImg from '../../../img/ap1.png';
 import './style.css';
 
 const SignIn = () => {
@@ -18,9 +18,9 @@ const SignIn = () => {
 	});
 
 	return user._id ? (
-		<Navigate push to={`/main`} />
+		<Navigate push to={`/`} />
 	) : (
-		<Fragment>
+		<div className='auth'>
 			<h2 className="auth__title">Sign In</h2>
 			<div className="auth__block">
 				<form className="auth__form" action={API_URL} method="POST" onSubmit={handleFormSubmit}>
@@ -50,13 +50,13 @@ const SignIn = () => {
 						Log in
 					</button>
 
-					<Link className="auth__link" to="/signup">
+					{/* <Link className="auth__link" to="/signup">
 						No profile? Sign up
-					</Link>
+					</Link> */}
 				</form>
-				<img className="auth__img" src={SignInImg} alt="auth" />
+				{/* <img className="auth__img" src={SignInImg} alt="auth" /> */}
 			</div>
-		</Fragment>
+		</div>
 	);
 };
 

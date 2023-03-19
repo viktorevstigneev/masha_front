@@ -1,26 +1,40 @@
 .contact{
-    background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.514)),url('../../../img/header_bg.png') 50% no-repeat;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.514)); */
 	background-size: cover;
 	height: 800px;
-    border-top: 1px solid #000;
+    border-top: 1px solid #ffffff;
 }
 
 .music__title {
-	margin-top: 10%;
+	
 	text-align: center;
-	color: aliceblue;
+	font-weight: 400;
+	color: rgb(43, 43, 43);
 }
 
 .music_container {
 	width: 70%;
 	margin: 0 auto;
+	display: flex;
+
+}
+
+.music__form{
+	width: 50%;
+	background: #f0d7d7;
+	padding: 30px;
+}
+
+.ct__img{
+width: 50%;
 }
 
 .music__input {
-	border: 1px solid #ffffff;
-	width: 50%;
+	border: none;
+	border-bottom: 1px solid #000000;
+	width: 90%;
 	padding: 10px;
-	background: white;
+	background: transparent;
 	margin: 5px;
 	margin-left: 0;
 	color: black;
@@ -33,7 +47,7 @@
 .music__message{
 
 	border: 1px solid #ffffff;
-	width: 50%;
+	width: 90%;
 	padding: 10px;
 	background: white;
 	margin: 5px;
@@ -52,7 +66,7 @@
 	display: block;
 	margin-top: 10px;
 	position: relative;
-	color: #fff;
+	color: #000000;
 }
 
 .music__label::after {
@@ -64,17 +78,18 @@
 
 
 .music__btn {
-	background: #d1a379;
+	background: #6c1cff;
 	display: block;
-	padding: 15px 50px;
+	width:95%;
+	padding: 10px;
 	color: #fff;
-	font-size: 28px;
+	font-size: 22px;
 	border: none;
-	box-shadow: 4px 8px 0px 0px rgba(122, 122, 122, 0.473);
 	transition: 1s;
+	margin: 0;
 	cursor: pointer;
 }
 .music__btn:hover {
-	background: #b97d45;
+	background: #e912e9;
 }
 

@@ -123,3 +123,40 @@
 .services__image{
 	width: 100%;
 }
+
+.home__subscribe{
+	width: 60%;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+
+.subscribe__label{
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 20px;
+}
+.subscribe__input{
+	display: block;
+	padding: 10px;
+
+	width: 97%;
+}
+
+.subscribe__btn{
+	margin-top: 30px;
+	display: block;
+	width: 100%;
+	padding: 15px;
+	color: white;
+	background: black;
+	cursor: pointer;
+
+}
+
+.subscribe__btn:hover{
+	background: white;
+	color: black;
+}
