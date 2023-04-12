@@ -5,22 +5,20 @@ import Footer from '../../common/Footer';
 import './style.css';
 
 // import { sliderData } from './data';
-import i1 from '../../../img/1.png';
-import i2 from '../../../img/2.png';
-import i3 from '../../../img/3.png';
-import i4 from '../../../img/4.png';
-import i5 from '../../../img/5.png';
+import i4 from '../../../img/serv2.png';
+import i5 from '../../../img/serv1.png';
 import i6 from '../../../img/6.png';
 import me from '../../../img/me_about.png';
 import serv1 from '../../../img/serv1.png';
 import serv2 from '../../../img/serv2.png';
 import { API_URL } from '../../../constants';
 import axios from 'axios';
+import ImageSlider from '../../common/Slider/Slider';
+
+const projData = [ i6,i4, i5];
+
 
 const MainPage = () => {
-	useEffect(() => {
-		// window.location.reload()
-	}, []);
 	return (
 		<>
 			<main className="home">
@@ -28,20 +26,16 @@ const MainPage = () => {
 					<div className="home__main">
 						<p className="home__name">Yanushko Maria Home styling</p>
 						<p className="home__name">Be bold. Style your life</p>
+						<div class="arrow-down">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 
 					<h1 className="home__title">My projects</h1>
 					<div className="home__projects">
-						<div className="projects__left">
-							<img src={i1} alt="" className="left__image" />
-							<img src={i2} alt="" className="left__image" />
-							<img src={i3} alt="" className="left__image" />
-							<img src={i4} alt="" className="left__image" />
-						</div>
-
-						<img src={i5} alt="" className="middle__image" />
-
-						<img src={i6} alt="" className="right__image" />
+						<ImageSlider data={projData} />
 					</div>
 
 					<div className="home__about">

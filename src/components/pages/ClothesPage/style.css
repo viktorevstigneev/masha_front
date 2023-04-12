@@ -16,6 +16,7 @@
 }
 
 .clothes__content {
+	margin-top: 160px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	column-gap: 15px;

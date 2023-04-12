@@ -1,19 +1,54 @@
 .home {
 	/* background: url('../../../img/main_bg.png') 50% no-repeat; */
 	/* background-size: cover; */
-	background: rgb(255, 255, 255);
+	background: rgba(20, 20, 20, 0.74);
+}
+
+.arrow-down {
+    width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.arrow-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #337AB7;
+    border-right: 5px solid #337AB7;
+    transform: rotate(45deg);
+    /* margin: -16px; */
+    animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
 
 .home__container {
-	background: #f2e5e4;
-	padding: 20px;
-	width: 90%;
+	/* background: #131313; */
+	/* padding: 20px; */
+	width: 100%;
 	margin: 0 auto;
 }
 
 .home__main {
 	padding: 20% 0;
-	background: url('../../../img/home.png') 50% no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.274)) ,url('../../../img/home.png') 50% no-repeat;
 }
 
 .home__name {
@@ -25,8 +60,24 @@
 }
 
 .home__title {
+	width: 30%;
+	margin: 60px auto;
 	text-align: center;
 	font-weight: 500;
+	position: relative;
+	color: #6dbbff;;
+
+}
+
+.home__title::after{
+	position: absolute;
+	content: "";
+	display: block;
+	left: 150px;
+	bottom: -10px;
+	width: 100px;
+	background: #6dbbff;
+	height: 1px;
 }
 
 .home__projects {
@@ -62,7 +113,7 @@
 }
 
 .home__about{
-	width: 100%;
+	/* width: 100%; */
 	margin: 0 auto;
 	margin-top: 50px;
 	padding: 10px;
@@ -71,7 +122,7 @@
 }
 
 .about__left{
-	background: white;
+	background: rgb(29, 29, 29);
 	text-align: left;
 	padding-left: 70px;
 	width: 50%;
@@ -90,20 +141,22 @@
 
 .about__button{
 	text-decoration: none;
-	color: black;
-	border: 1px solid #000;
+	color: rgb(255, 255, 255);
+	border: 1px solid #ffffff;
 	padding: 10px 20px;
-	transition: 0.5s;
+	transition: border-radius 3s,  background 1s;
 }
 
 .about__button:hover{
-	color: white;
-	background: #000;
+	color: rgb(0, 0, 0);
+	background: #ffffff;
+	border-radius: 100px;
 }
 
 .services__title{
 	text-align: center;
-	background: white;
+	background: rgba(49, 49, 49, 0.199);
+	color: #ffffff;
 	margin: 0;
 	margin-top: 20px;
 	padding: 40px 0;
@@ -118,10 +171,32 @@
 .services__content{
 	width: 48%;
 	text-align: center;
+	position: relative;
+	
 }
 
 .services__image{
 	width: 100%;
+	filter: drop-shadow(1px 1px 2px red) invert(80%);
+	/* filter: blur(1px); */
+	transition: 1s;
+}
+
+.services__caption{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	font-size: 24px;
+	transition: 1s;
+}
+
+.services__content:hover .services__image{
+	filter: none;
+}
+
+.services__content:hover .services__caption{
+	font-size: 28px;
+	border-bottom: 1px solid #00eeff;
 }
 
 .home__subscribe{
@@ -141,8 +216,13 @@
 .subscribe__input{
 	display: block;
 	padding: 10px;
-
+	background: #454545;
+	color: #afafaf;
 	width: 97%;
+}
+
+.subscribe__input::placeholder{
+	color: white;
 }
 
 .subscribe__btn{
@@ -153,10 +233,15 @@
 	color: white;
 	background: black;
 	cursor: pointer;
+	transition: 1s;
 
+	background: rgb(51, 51, 51);
+	color: rgb(167, 167, 167);
+	border-radius: 10px;
 }
 
 .subscribe__btn:hover{
-	background: white;
-	color: black;
+	background: rgb(90, 90, 90);
+	color: rgb(204, 187, 187);
+	border-radius: 100px;
 }

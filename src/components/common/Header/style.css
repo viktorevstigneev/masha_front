@@ -1,13 +1,14 @@
 .header {
-	background: rgb(236, 206, 206);
-	/* position: fixed;
+	/* background: rgb(53, 53, 53); */
+	background: rgb(110, 110, 110);
+	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1000; */
+	z-index: 1000;
 }
 
 .header__container {
-	background: #F2E5E4;
+	/* background: #F2E5E4; */
 	width: 80%;
 	padding: 10px;
 	margin: 0 auto;
@@ -17,7 +18,7 @@
 }
 
 .header__logo{
-	color: rgb(59, 52, 52);
+	color: rgb(252, 252, 252);
 	font-weight: 600;
 }
 
@@ -30,6 +31,14 @@
 
 .header__link{
 	text-decoration: none;
-	color: black;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	border: 1px solid transparent;
+	transition: 0.5s;
 }
 
+.header__link:hover{
+	color: aqua;
+	border: 1px solid aqua;
+	border-radius: 10px;
+}

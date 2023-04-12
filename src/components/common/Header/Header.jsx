@@ -7,18 +7,18 @@ import './style.css';
 
 import { API_URL } from '../../../constants';
 
-const Header = () => {
-	const [user, setUser] = useState();
-	console.log('user: ', user);
+const Header = ({user}) => {
+	// const [user, setUser] = useState(userC);
+	// console.log('user: ', user);
 
-	useEffect(() => {
-		const getCurrentUser = async () => {
-			const responseData = await axios
-				.get(`${API_URL}/profile`, { withCredentials: true })
-				.then((response) => setUser(response.data));
-		};
-		getCurrentUser();
-	}, []);
+	// useEffect(() => {
+	// 	const getCurrentUser = async () => {
+	// 		const responseData = await axios
+	// 			.get(`${API_URL}/profile`, { withCredentials: true })
+	// 			.then((response) => setUser(response.data));
+	// 	};
+	// 	getCurrentUser();
+	// }, []);
 
 	return (
 		<header className="header">

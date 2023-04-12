@@ -1,8 +1,10 @@
 .auth{
-	background: url('../../../img/proj_bg.png') 50% no-repeat;
+	background: linear-gradient(#252525ec, #000000dc),url('../../../img/proj_bg.png') 50% no-repeat;
 	background-size: cover;
 	height: 100%;
 	padding-bottom: 70px;
+
+	margin-top: 70px;
 }
 
 .auth__title {
@@ -27,6 +29,9 @@
 .auth__form {
 	padding: 20px;
 	width: 100%;
+
+	border-radius: 20px;
+	background: #454545;
 }
 
 .auth__label {
@@ -43,16 +48,23 @@
 	width: 90%;
 	border-radius: 5px;
 	border: 1px solid #d1a379;
+	color: #fff;
+
+	background: #454545;
+}
+
+.auth__input::placeholder{
+	color: #fff;
 }
 
 .auth__button {
-	background: #fff;
-	border: 1px solid #000;
+	background: #202020;
+	/* border: 1px solid #000; */
 	margin-top: 20px;
 	display: block;
-	width: 95%;
+	width: 93%;
 	padding: 10px;
-	color: #000000;
+	color: #ffffff;
 	font-size: 22px;
 
 	transition: 1s;
@@ -60,8 +72,9 @@
 }
 
 .auth__button:hover {
-	background: #000000;
+	background: #161616;
 	color: #ffffff;
+	border-radius: 100px;
 }
 
 .auth__link {

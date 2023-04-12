@@ -7,7 +7,7 @@
 }
 
 .house__content{
-	background: #F8F4F1;
+	background: #454545;
 	width: 40%;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -30,11 +30,12 @@
 	align-items: center;
 	text-decoration: none;
 
+	box-shadow: 1px 1px 2px 2px #2c2828;
 	transition: 0.5s;
 }
 .house__wrapper:hover{
-	background: rgb(255, 223, 223);
-	box-shadow: 1px 1px 10px 10px rgb(255, 197, 197);
+	background: #3f3f3f;
+	box-shadow: 1px 1px 4px 6px #2c2828;
 }
 
 .house__image{
@@ -45,5 +46,5 @@
 .house__description{
 	text-align: center;
 	font-size: 40px;
-	color: #000;
+	color: #ffffff;
 }

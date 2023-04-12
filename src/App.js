@@ -1,7 +1,9 @@
 import './App.css';
-import React, { lazy, Suspense, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/common/Header';
+import { API_URL } from './constants';
+import axios from 'axios';
 
 const SignInPage = lazy(() => import('./components/pages/SignIn'));
 // const SignUpPage = lazy(() => import('./components/pages/Signup'));
@@ -46,13 +48,26 @@ const AdminPage = lazy(() => import('./components/pages/AdminPanel'));
 // const CartPage = lazy(() => import('./components/pages/CartPage'));
 
 function App() {
+
+	const [user, setUser] = useState();
+
+	
+	useEffect(() => {
+		const getCurrentUser = async () => {
+			const responseData = await axios
+				.get(`${API_URL}/profile`, { withCredentials: true })
+				.then((response) => setUser(response.data));
+		};
+		getCurrentUser();
+	}, []);
+
 	return (
 		<BrowserRouter>
-			<Header />
+			<Header user={user}/>
 			<Suspense fallback={<Spinner />}>
 				<Routes>
 					<Route path="/" element={<MainPage />} />
-					<Route path="/signin" element={<SignInPage />} />
+					<Route path="/signin" element={<SignInPage user={user} setUser={setUser} />} />
 					{/* <Route path="/signup" element={<SignUpPage />} /> */}
 
 					<Route path="/projects" element={<ProjectPage />} />

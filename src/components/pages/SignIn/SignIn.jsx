@@ -6,8 +6,8 @@ import { API_URL } from '../../../constants';
 import SignInImg from '../../../img/ap1.png';
 import './style.css';
 
-const SignIn = () => {
-	const [user, setUser] = useState({});
+const SignIn = ({ user, setUser }) => {
+	// const [user, setUser] = useState({});
 	console.log('user: ', user);
 
 	const handleFormSubmit = useCallback((evt) => {
@@ -15,15 +15,16 @@ const SignIn = () => {
 		const formData = Object.fromEntries(new FormData(evt.target));
 
 		signIn({ formData, setUser });
+		// window.location.reload();
 	});
 
-	return user._id ? (
+	return user?._id ? (
 		<Navigate push to={`/`} />
 	) : (
-		<div className='auth'>
+		<div className="auth">
 			<h2 className="auth__title">Sign In</h2>
 			<div className="auth__block">
-				<form className="auth__form" action={API_URL} method="POST" onSubmit={handleFormSubmit}>
+				<form id="signin" className="auth__form" action={API_URL} method="POST" onSubmit={handleFormSubmit}>
 					<label className="auth__label" htmlFor="username">
 						Login
 					</label>

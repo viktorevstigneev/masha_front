@@ -1,86 +1,85 @@
-.contact{
-    /* background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.514)); */
+.contact {
+	/* background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.514)); */
 	background-size: cover;
 	height: 800px;
-    border-top: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;
+	margin-top: 90px;
+	background: #454545;
 }
 
 .music__title {
-	
 	text-align: center;
 	font-weight: 400;
-	color: rgb(43, 43, 43);
+	color: rgb(255, 255, 255);
 }
 
 .music_container {
 	width: 70%;
 	margin: 0 auto;
 	display: flex;
-
 }
 
-.music__form{
+.music__form {
 	width: 50%;
-	background: #f0d7d7;
+	background: #3b3b3b;
 	padding: 30px;
+
+	box-shadow: 0px 2px 5px 2px #1b1b1b33 inset, 0px 2px 10px 3px rgba(8, 8, 8, 0.2);
 }
 
-.ct__img{
-width: 50%;
+.ct__img {
+	width: 50%;
 }
 
 .music__input {
 	border: none;
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #ffffff;
 	width: 90%;
 	padding: 10px;
 	background: transparent;
 	margin: 5px;
 	margin-left: 0;
-	color: black;
+	color: rgb(255, 255, 255);
 }
 
 .music__input::placeholder {
-	color: black;
+	color: rgb(255, 255, 255);
 }
 
-.music__message{
-
+.music__message {
 	border: 1px solid #ffffff;
 	width: 90%;
 	padding: 10px;
-	background: white;
+	background: transparent;
 	margin: 5px;
 	margin-left: 0;
-	color: black;
-    resize: none;
-    height: 120px;
+	color: rgb(255, 255, 255);
+	resize: none;
+	height: 120px;
 }
 
 .music__message::placeholder {
-	color: black;
+	color: rgb(255, 255, 255);
 }
-
 
 .music__label {
 	display: block;
 	margin-top: 10px;
 	position: relative;
-	color: #000000;
+	color: #ffffff;
 }
 
 .music__label::after {
 	content: '*';
 	margin-left: 5px;
 	font-size: 25px;
-	color: red;
+	color: rgb(0, 174, 255);
 }
 
-
 .music__btn {
-	background: #6c1cff;
+	background: #272727;
 	display: block;
-	width:95%;
+	width: 95%;
 	padding: 10px;
 	color: #fff;
 	font-size: 22px;
@@ -90,6 +89,7 @@ width: 50%;
 	cursor: pointer;
 }
 .music__btn:hover {
-	background: #e912e9;
+	background: #5a5a5ada;
+	color: #ffffff;
+	box-shadow: 0px 2px 5px 2px #1b1b1b33 inset, 0px 1px 4px 1px rgba(8, 8, 8, 0.2);
 }
-
