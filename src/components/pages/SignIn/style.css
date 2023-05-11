@@ -1,10 +1,11 @@
-.auth{
-	background: linear-gradient(#252525ec, #000000dc),url('../../../img/proj_bg.png') 50% no-repeat;
+.auth {
+	background: linear-gradient(#ffffff3a, #dbdbdb65), url('../../../img/proj_bg.png') 50% no-repeat;
 	background-size: cover;
 	height: 100%;
 	padding-bottom: 70px;
 
 	margin-top: 70px;
+	border-top: 1px solid #000;
 }
 
 .auth__title {
@@ -13,12 +14,12 @@
 	margin-top: 0;
 	color: #fff;
 	font-weight: 500;
+	margin-top: 100px;
 }
 
 .auth__block {
 	width: 50%;
 
-	height: 100%;
 	margin: 0 auto;
 	display: flex;
 
@@ -31,11 +32,12 @@
 	width: 100%;
 
 	border-radius: 20px;
-	background: #454545;
+	background: #ffffff9f;
+	padding-bottom: 60px;
 }
 
 .auth__label {
-	color: #fff;
+	color: #000000;
 	margin-top: 10px;
 	display: block;
 	text-transform: uppercase;
@@ -48,27 +50,28 @@
 	width: 90%;
 	border-radius: 5px;
 	border: 1px solid #d1a379;
-	color: #fff;
+	color: #000000;
 
-	background: #454545;
+	background: #dddddd;
 }
 
-.auth__input::placeholder{
-	color: #fff;
+.auth__input::placeholder {
+	color: #000000;
 }
 
 .auth__button {
-	background: #202020;
+	background: #cacaca;
 	/* border: 1px solid #000; */
 	margin-top: 20px;
 	display: block;
 	width: 93%;
 	padding: 10px;
-	color: #ffffff;
+	color: #070707;
 	font-size: 22px;
 
 	transition: 1s;
 	cursor: pointer;
+	border: 1px solid #ffffff;
 }
 
 .auth__button:hover {
@@ -85,4 +88,3 @@
 	font-weight: 600;
 	font-size: 18px;
 }
-

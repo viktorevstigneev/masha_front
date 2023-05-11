@@ -30,27 +30,27 @@ const KitchensPage = () => {
 			<main className="kicth">
 				<div className="kicth__top">
 					<div className="kicth__content">
-						<h1 className="kicth__title">kicthens</h1>
+						<h1 className="kicth__title">Кухни</h1>
 						<p className="kicth__caption">
-							Here are my kitchens designs. You can learn more about each by clicking on the title or picture.
+							Вот мои проекты кухонь. Вы можете узнать больше о каждом, нажав на название или изображение.
 						</p>
 					</div>
 				</div>
 				<div className="kicth__bottom">
 					<Link className="kicth__wrapper" to="/brightkitchen">
 						<img src={i1} alt="" className="kicth__image" />
-						<p className="kicth__description">Bright kitchen</p>
+						<p className="kicth__description">Светлая кухня</p>
 					</Link>
 					<Link className="kicth__wrapper" to="/humblekitchen">
-						<p className="kicth__description">Humble kitchen</p>
+						<p className="kicth__description">Скромная кухня</p>
 						<img src={i2} alt="" className="kicth__image" />
 					</Link>
 					<Link className="kicth__wrapper" to="/elegntkitchen">
 						<img src={i3} alt="" className="kicth__image" />
-						<p className="kicth__description">Elegant kitchen</p>
+						<p className="kicth__description">Элегантная кухня</p>
 					</Link>
 					<Link className="kicth__wrapper" to="/greenkitchen">
-						<p className="kicth__description">Green kitchen</p>
+						<p className="kicth__description">Зеленая кухня</p>
 						<img src={i4} alt="" className="kicth__image" />
 					</Link>
 				</div>

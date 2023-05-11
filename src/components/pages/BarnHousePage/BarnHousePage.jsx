@@ -29,12 +29,12 @@ const BarnHousePage = () => {
 			<main className="house">
 				<div className="house__top">
 					<div className="house__content">
-						<h1 className="house__title">Barn house</h1>
+						<h1 className="house__title">Амбарный дом</h1>
 					</div>
 				</div>
 				<div className="house__bottom">
 					<div className="house__bottom-wrapper">
-						<p className="house__bottom-caption">House with a sloping roof and large windows</p>
+						<p className="house__bottom-caption">Дом с наклонной крышей и большими окнами</p>
 						<img src={i1} alt="" className="house__bottom-image" />
 					</div>
 				</div>

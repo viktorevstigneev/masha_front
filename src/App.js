@@ -6,8 +6,9 @@ import { API_URL } from './constants';
 import axios from 'axios';
 
 const SignInPage = lazy(() => import('./components/pages/SignIn'));
-// const SignUpPage = lazy(() => import('./components/pages/Signup'));
+const SignUpPage = lazy(() => import('./components/pages/Signup'));
 const MainPage = lazy(() => import('./components/pages/MainPage'));
+const AdvisePage = lazy(() => import('./components/pages/AdvisePage'));
 const ProjectPage = lazy(() => import('./components/pages/ProjectPage'));
 const AboutPage = lazy(() => import('./components/pages/AboutPage'));
 const Spinner = lazy(() => import('./components/common/Spinner'));
@@ -63,14 +64,15 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<Header user={user}/>
+			<Header user={user} />
 			<Suspense fallback={<Spinner />}>
 				<Routes>
-					<Route path="/" element={<MainPage />} />
+					<Route path="/" element={<MainPage user={user} />} />
 					<Route path="/signin" element={<SignInPage user={user} setUser={setUser} />} />
-					{/* <Route path="/signup" element={<SignUpPage />} /> */}
+					<Route path="/signup" element={<SignUpPage />} />
 
 					<Route path="/projects" element={<ProjectPage />} />
+					<Route path="/advise" element={<AdvisePage />} />
 
 					<Route path="/houses" element={<HousesPage />} />
 					<Route path="/apartments" element={<ApartmentsPage />} />
@@ -103,7 +105,7 @@ function App() {
 
 					{/* <Route path="/profile" element={<ProfilePage />} /> */}
 					<Route path="/admin" element={<AdminPage />} />
-					<Route path="/works" element={<ClothesPage />} />
+					<Route path="/works" element={<ClothesPage user={user} />} />
 					<Route path="/about" element={<AboutPage />} />
 
 					<Route path="/contact" element={<ContactPage />} />

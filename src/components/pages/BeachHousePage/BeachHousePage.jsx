@@ -29,12 +29,12 @@ const BeachHousePage = () => {
 			<main className="house">
 				<div className="house__top">
 					<div className="house__content">
-						<h1 className="house__title">Beach house</h1>
+						<h1 className="house__title">Домик на пляже</h1>
 					</div>
 				</div>
 				<div className="house__bottom">
 					<div className="house__bottom-wrapper">
-						<p className="house__bottom-caption">Small cozy house by the sea</p>
+						<p className="house__bottom-caption">Небольшой уютный дом у моря</p>
 						<img src={i1} alt="" className="house__bottom-image" />
 					</div>
 				</div>

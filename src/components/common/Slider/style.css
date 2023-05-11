@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	margin-top: 70px;
 	padding: 10px 50px;
-	background: #474747;
+	background: #c7c7c7;
 }
 
 .slick-slider {
@@ -94,8 +94,12 @@
 }
 
 .slider__image {
-	width: 100%;
+	width: 60%;
+	object-fit: cover;
 	height: 350px;
+	display: block;
+	margin: 0 auto;
+
 }
 
 .slider__edit-btn{

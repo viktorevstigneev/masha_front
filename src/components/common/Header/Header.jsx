@@ -7,7 +7,7 @@ import './style.css';
 
 import { API_URL } from '../../../constants';
 
-const Header = ({user}) => {
+const Header = ({ user }) => {
 	// const [user, setUser] = useState(userC);
 	// console.log('user: ', user);
 
@@ -24,46 +24,53 @@ const Header = ({user}) => {
 		<header className="header">
 			<div className="header__container">
 				<div className="header__logo">
-					<p className="header__logo--top">Yanushko Maria</p>
-					<p className="header__logo--bottom">Home styling design</p>
+					<p className="header__logo--top">Янушко Мария</p>
+					<p className="header__logo--bottom">Дизайн домашнего стиля</p>
 				</div>
 				<nav className="header__nav">
 					<Link className="header__link" to="/">
-						Home
+						Главная
 					</Link>
 					<Link className="header__link" to="/projects">
-						My project
+						Мои проекты
 					</Link>
 					<Link className="header__link" to="/about">
-						About
+						Обо мне
 					</Link>
-					<Link className="header__link" to="/contact">
-						Contact
-					</Link>
+
 					<Link className="header__link" to="/works">
-						All works
+						Все мои работы
+					</Link>
+					<Link className="header__link" to="/advise">
+						Советы
 					</Link>
 					{user && user.isAdmin ? (
 						<Link className="header__link" to="/admin">
-							Admin
+							Администратор
 						</Link>
 					) : null}
+
 					{user && user ? (
-						<Link
-							className="header__link"
-							to="/"
-							onClick={async (evt) => {
-								const response = await axios.post(`${API_URL}/logout`, {}, { withCredentials: true });
-								if (response.status == 200) {
-									window.location.reload();
-								}
-							}}
-						>
-							Log out
-						</Link>
+						<>
+							<Link className="header__link" to="/contact">
+								Связаться
+							</Link>
+							<Link
+								className="header__link"
+								to="/"
+								onClick={async (evt) => {
+									const response = await axios.post(`${API_URL}/logout`, {}, { withCredentials: true });
+									if (response.status == 200) {
+										window.location.reload();
+									}
+								}}
+							>
+								Выйти
+							</Link>
+						</>
 					) : (
 						<Link className="header__link" to="/signin">
-							Sign in
+							Войти
 						</Link>
 					)}
 				</nav>

@@ -1,5 +1,5 @@
 .proj{
-	background: #353535;
+	/* background: #353535; */
 }
 .proj__top {
 	background: url('../../../img/proj_bg.png') 50% no-repeat; 
@@ -10,7 +10,7 @@
 }
 
 .proj__content{
-	background: #454545;
+	background: #dddddd;
 	width: 40%;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -33,11 +33,11 @@
 	align-items: center;
 	text-decoration: none;
 
-	box-shadow: 1px 1px 2px 2px #2c2828;
+	
 	transition: 0.5s;
 }
 .proj__wrapper:hover{
-	background: #3f3f3f;
+	background: #c2c2c2;
 	box-shadow: 1px 1px 4px 6px #2c2828;
 }
 
@@ -49,5 +49,5 @@
 .proj__description{
 	text-align: center;
 	font-size: 40px;
-	color: #ffffff;
+	color: #000;
 }

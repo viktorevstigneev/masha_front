@@ -29,12 +29,12 @@ const GreenHousePage = () => {
 			<main className="house">
 				<div className="house__top">
 					<div className="house__content">
-						<h1 className="house__title">Modern bathroom</h1>
+						<h1 className="house__title">Современная ванная комната</h1>
 					</div>
 				</div>
 				<div className="house__bottom">
 					<div className="house__bottom-wrapper">
-						<p className="house__bottom-caption">Simple modern bathroom with grunge elements</p>
+						<p className="house__bottom-caption">Простая современная ванная комната с элементами гранжа</p>
 						<img src={i1} alt="" className="house__bottom-image" />
 					</div>
 				</div>

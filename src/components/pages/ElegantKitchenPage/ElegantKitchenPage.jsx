@@ -29,12 +29,12 @@ const GreenHousePage = () => {
 			<main className="house">
 				<div className="house__top">
 					<div className="house__content">
-						<h1 className="house__title">Elegant kitchen</h1>
+						<h1 className="house__title">Элегантная кухня</h1>
 					</div>
 				</div>
 				<div className="house__bottom">
 					<div className="house__bottom-wrapper">
-						<p className="house__bottom-caption">Contemporary kitchen with a twist</p>
+						<p className="house__bottom-caption">Современная кухня с изюминкой</p>
 						<img src={i1} alt="" className="house__bottom-image" />
 					</div>
 				</div>

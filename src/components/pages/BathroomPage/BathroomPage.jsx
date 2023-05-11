@@ -30,27 +30,27 @@ const BathroomPage = () => {
 			<main className="bath">
 				<div className="bath__top">
 					<div className="bath__content">
-						<h1 className="bath__title">Bathrooms</h1>
+						<h1 className="bath__title">Ванные комнаты</h1>
 						<p className="bath__caption">
-							Here are my Bathrooms designs. You can learn more about each by clicking on the title or picture.
+							Вот мои проекты ванных комнат. Вы можете узнать больше о каждом, нажав на название или изображение.
 						</p>
 					</div>
 				</div>
 				<div className="bath__bottom">
 					<Link className="bath__wrapper" to="/vintagebath">
 						<img src={i1} alt="" className="bath__image" />
-						<p className="bath__description">Vintage bathroom</p>
+						<p className="bath__description">Винтажная ванная комната</p>
 					</Link>
 					<Link className="bath__wrapper" to="/modernbath">
-						<p className="bath__description">Modern bathroom</p>
+						<p className="bath__description">Современная ванная комната</p>
 						<img src={i2} alt="" className="bath__image" />
 					</Link>
 					<Link className="bath__wrapper" to="/grungebath">
 						<img src={i3} alt="" className="bath__image" />
-						<p className="bath__description">Grunge bathroom</p>
+						<p className="bath__description">Ванная комната в стиле гранж</p>
 					</Link>
 					<Link className="bath__wrapper" to="/brightbath">
-						<p className="bath__description">Bright green bathroom</p>
+						<p className="bath__description">Ярко-зеленая ванная комната</p>
 						<img src={i4} alt="" className="bath__image" />
 					</Link>
 				</div>

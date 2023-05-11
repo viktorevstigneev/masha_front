@@ -29,12 +29,12 @@ const GreenHousePage = () => {
 			<main className="house">
 				<div className="house__top">
 					<div className="house__content">
-						<h1 className="house__title">Green corner</h1>
+						<h1 className="house__title">Зеленый угол</h1>
 					</div>
 				</div>
 				<div className="house__bottom">
 					<div className="house__bottom-wrapper">
-						<p className="house__bottom-caption">Small apartment with an abundance of vegetation in retro style</p>
+						<p className="house__bottom-caption">Небольшая квартира с обилием растительности в стиле ретро</p>
 						<img src={i1} alt="" className="house__bottom-image" />
 					</div>
 				</div>

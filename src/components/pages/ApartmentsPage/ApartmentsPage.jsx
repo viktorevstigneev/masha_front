@@ -30,27 +30,27 @@ const ApartmentsPage = () => {
 			<main className="apart">
 				<div className="apart__top">
 					<div className="apart__content">
-						<h1 className="apart__title">Apartments</h1>
+						<h1 className="apart__title">Квартиры</h1>
 						<p className="apart__caption">
-							Here are my kitchens designs. You can learn more about each by clicking on the title or picture.
+							Вот мои проекты квартир. Вы можете узнать больше о каждом, нажав на название или изображение.
 						</p>
 					</div>
 				</div>
 				<div className="apart__bottom">
 					<Link className="apart__wrapper" to="/cozyapart">
 						<img src={i1} alt="" className="apart__image" />
-						<p className="apart__description">Cozy apartment</p>
+						<p className="apart__description">Уютная квартира</p>
 					</Link>
 					<Link className="apart__wrapper" to="/cornerapart">
-						<p className="apart__description">Green corner</p>
+						<p className="apart__description">Зеленый угол</p>
 						<img src={i2} alt="" className="apart__image" />
 					</Link>
 					<Link className="apart__wrapper" to="/moderapart">
 						<img src={i3} alt="" className="apart__image" />
-						<p className="apart__description">Modern apartment</p>
+						<p className="apart__description">Современная квартира</p>
 					</Link>
 					<Link className="apart__wrapper" to="/boldapart">
-						<p className="apart__description">Bold decision</p>
+						<p className="apart__description">Смелое решение</p>
 						<img src={i4} alt="" className="apart__image" />
 					</Link>
 				</div>

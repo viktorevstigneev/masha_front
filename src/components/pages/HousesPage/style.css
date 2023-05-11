@@ -1,13 +1,13 @@
 .house__top {
-	background: url('../../../img/proj_bg.png') 50% no-repeat; 
+	background: url('../../../img/proj_bg.png') 50% no-repeat;
 	background-size: cover;
 
 	border-top: 1px solid #000;
 	padding: 70px 0 0;
 }
 
-.house__content{
-	background: #454545;
+.house__content {
+	background: #dddddd;
 	width: 40%;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -16,13 +16,13 @@
 	box-shadow: 1px 2px 10px 0px black;
 }
 
-.house__bottom{
+.house__bottom {
 	padding-top: 50px;
 	width: 50%;
 	margin: 0 auto;
 }
 
-.house__wrapper{
+.house__wrapper {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid #000;
@@ -30,21 +30,21 @@
 	align-items: center;
 	text-decoration: none;
 
-	box-shadow: 1px 1px 2px 2px #2c2828;
+	
 	transition: 0.5s;
 }
-.house__wrapper:hover{
-	background: #3f3f3f;
+.house__wrapper:hover {
+	background: #c2c2c2;
 	box-shadow: 1px 1px 4px 6px #2c2828;
 }
 
-.house__image{
+.house__image {
 	width: 300px;
 	height: 200px;
 }
 
-.house__description{
+.house__description {
 	text-align: center;
 	font-size: 40px;
-	color: #ffffff;
+color: #000;
 }

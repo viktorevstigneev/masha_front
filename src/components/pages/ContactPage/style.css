@@ -4,7 +4,8 @@
 	height: 800px;
 	border-top: 1px solid #ffffff;
 	margin-top: 90px;
-	background: #454545;
+	background: #ffffff;
+	
 }
 
 .music__title {
@@ -21,7 +22,8 @@
 
 .music__form {
 	width: 50%;
-	background: #3b3b3b;
+	background: #cecece;
+	
 	padding: 30px;
 
 	box-shadow: 0px 2px 5px 2px #1b1b1b33 inset, 0px 2px 10px 3px rgba(8, 8, 8, 0.2);
@@ -33,40 +35,40 @@
 
 .music__input {
 	border: none;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #000000;
 	width: 90%;
 	padding: 10px;
 	background: transparent;
 	margin: 5px;
 	margin-left: 0;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 }
 
 .music__input::placeholder {
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 }
 
 .music__message {
-	border: 1px solid #ffffff;
+	border: 1px solid #000000;
 	width: 90%;
 	padding: 10px;
 	background: transparent;
 	margin: 5px;
 	margin-left: 0;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	resize: none;
 	height: 120px;
 }
 
 .music__message::placeholder {
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 }
 
 .music__label {
 	display: block;
 	margin-top: 10px;
 	position: relative;
-	color: #ffffff;
+	color: #000000;
 }
 
 .music__label::after {
@@ -81,7 +83,7 @@
 	display: block;
 	width: 95%;
 	padding: 10px;
-	color: #fff;
+	color: #ffffff;
 	font-size: 22px;
 	border: none;
 	transition: 1s;

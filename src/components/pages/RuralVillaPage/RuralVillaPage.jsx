@@ -29,12 +29,12 @@ const RuralVillaPage = () => {
 			<main className="house">
 				<div className="house__top">
 					<div className="house__content">
-						<h1 className="house__title">Rural Villa</h1>
+						<h1 className="house__title">Сельская вилла</h1>
 					</div>
 				</div>
 				<div className="house__bottom">
 					<div className="house__bottom-wrapper">
-						<p className="house__bottom-caption">Small country villa in provincial style</p>
+						<p className="house__bottom-caption">Небольшая загородная вилла в провинциальном стиле</p>
 						<img src={i1} alt="" className="house__bottom-image" />
 					</div>
 				</div>

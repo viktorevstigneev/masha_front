@@ -15,17 +15,16 @@ import { API_URL } from '../../../constants';
 import axios from 'axios';
 import ImageSlider from '../../common/Slider/Slider';
 
-const projData = [ i6,i4, i5];
+const projData = [i6, i4, i5];
 
-
-const MainPage = () => {
+const MainPage = ({ user }) => {
 	return (
 		<>
 			<main className="home">
 				<div className="home__container">
 					<div className="home__main">
-						<p className="home__name">Yanushko Maria Home styling</p>
-						<p className="home__name">Be bold. Style your life</p>
+						<p className="home__name">Янушко Мария интерьерный дизайнер</p>
+						<p className="home__name">Будь смелым. Стилизуй свою жизнь</p>
 						<div class="arrow-down">
 							<span></span>
 							<span></span>
@@ -33,72 +32,74 @@ const MainPage = () => {
 						</div>
 					</div>
 
-					<h1 className="home__title">My projects</h1>
+					<h1 className="home__title">Мои проекты</h1>
 					<div className="home__projects">
 						<ImageSlider data={projData} />
 					</div>
 
 					<div className="home__about">
 						<div className="about__left">
-							<h2 className="about__titlee">About Me</h2>
+							<h2 className="about__titlee">Обо мне</h2>
 
 							<p className="about__description">
-								Creating a design of various kinds is an art. Behind each of my work is a lot of time and effort that I
-								spend to create.
+								Создание дизайна разного рода – это искусство. За каждой моей работой стоит много времени и сил, которые
+								я тратить на создание.
 							</p>
 							<p className="about__description">
-								Never force yourself to do something you don't want to. The main thing is to find yourself
+								Никогда не заставляйте себя делать то, чего вы не хотите. Главное найти себя
 							</p>
 							<a className="about__button" href="/about">
-								Learn more
+								Узнать больше
 							</a>
 						</div>
 						<img src={me} alt="" className="about__right" />
 					</div>
 
 					<div className="home__services">
-						<h2 className="services__title">My services</h2>
+						<h2 className="services__title">Мои услуги</h2>
 						<div className="services__wrapper">
 							<div className="services__content">
 								<img src={serv1} alt="" className="services__image" />
-								<p className="services__caption">Full Interior Styling</p>
+								<p className="services__caption">Полная внутренняя отделка</p>
 							</div>
 							<div className="services__content">
 								<img src={serv2} alt="" className="services__image" />
-								<p className="services__caption">Small Space Makeover</p>
+								<p className="services__caption">Преображение маленького пространства</p>
 							</div>
 						</div>
 					</div>
 
-					<div className="home__subscribe">
-						<form
-							action=""
-							className="subscribe__form"
-							encType="multipart/form-data"
-							// method="POST"
-							onSubmit={async (evt) => {
-								evt.preventDefault();
+					{user && user ? (
+						<div className="home__subscribe">
+							<form
+								action=""
+								className="subscribe__form"
+								encType="multipart/form-data"
+								// method="POST"
+								onSubmit={async (evt) => {
+									evt.preventDefault();
 
-								const formData = new FormData(evt.target);
+									const formData = new FormData(evt.target);
 
-								const responseData = await axios({
-									method: 'POST',
-									url: `${API_URL}/banner`,
-									data: formData,
-									withCredentials: true,
-								});
-								window.location.reload();
-							}}
-						>
-							<label htmlFor="" className="subscribe__label">
-								Follow my updates
-							</label>
-							<input type="email" name="email" className="subscribe__input" placeholder="email" required />
-							<button type="submit" className="subscribe__btn">
-								Follow
-							</button>
-						</form>
-					</div>
+									const responseData = await axios({
+										method: 'POST',
+										url: `${API_URL}/banner`,
+										data: formData,
+										withCredentials: true,
+									});
+									window.location.reload();
+								}}
+							>
+								<label htmlFor="" className="subscribe__label">
+									Следите за моими обновлениями
+								</label>
+								<input type="email" name="email" className="subscribe__input" placeholder="email" required />
+								<button type="submit" className="subscribe__btn">
+									подписаться
+								</button>
+							</form>
+						</div>
+					) : null}
 				</div>
 			</main>
 			{/* <Footer /> */}

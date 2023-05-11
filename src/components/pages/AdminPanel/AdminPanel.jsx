@@ -7,6 +7,48 @@ import './style.css';
 
 import { API_URL } from '../../../constants';
 
+export const ROOM_TYPE = [
+	{
+		id: 'Кухня',
+	},
+	{
+		id: 'Дом',
+	},
+	{
+		id: 'Дача',
+	},
+	{
+		id: 'Вилла',
+	},
+	{
+		id: 'Ванная комната',
+	},
+	{
+		id: 'Зал',
+	},
+	{
+		id: 'Спальня',
+	},
+];
+
+export const STYLE_TYPE = [
+	{
+		id: 'Хайтек',
+	},
+	{
+		id: 'Скандинавский',
+	},
+	{
+		id: 'Лофт',
+	},
+	{
+		id: 'Модерн',
+	},
+	{
+		id: 'Минимализм',
+	},
+];
+
 const AdminPanel = () => {
 	const [file, setFile] = useState('');
 	const [folowerData, setFolloweData] = useState();
@@ -23,7 +65,7 @@ const AdminPanel = () => {
 
 	return (
 		<section className="admin">
-			<h1 className="admin__title">Adding your work</h1>
+			<h1 className="admin__title">Добавление новой работы</h1>
 			<form
 				className="admin__person"
 				encType="multipart/form-data"
@@ -62,26 +104,47 @@ const AdminPanel = () => {
 
 				<div className="admin__right">
 					<label className="music__label" htmlFor="name">
-						Enter name of work
+						Введите название работы
 					</label>
 					<input className="admin__text-input" type="text" name="name" id="name" />
 
 					<label className="music__label" htmlFor="decript">
-						Enter description of work
+						Введите описание работы
 					</label>
 					<textarea className="admin__textarea" type="text" name="description" id="descript" />
 
+					<label className="music__label" htmlFor="type">
+						Выберите тип помещения
+					</label>
+					<select className="admin__text-input" name="roomType" id="type">
+						{ROOM_TYPE.map((color) => (
+							<option className="option__item" data-value={color} key={color.id} style={{ background: color.hex }}>
+								{color.id}
+							</option>
+						))}
+					</select>
+
+					<label className="music__label" htmlFor="styleType">
+						Выберите тип стиля
+					</label>
+					<select className="admin__text-input" name="styleType" id="styleType">
+						{STYLE_TYPE.map((color) => (
+							<option className="option__item" data-value={color} key={color.id} style={{ background: color.hex }}>
+								{color.id}
+							</option>
+						))}
+					</select>
+
 					<button className="admin__button" type="submit">
-						Submit
+						добавить
 					</button>
 				</div>
 			</form>
 
 			<div className="followers">
-				<h2 className="folowers__title">My subscribes</h2>
-				{folowerData && folowerData.map((item)=>(
-				<p className="followers__name">{item.email}</p>
-			))}</div>
+				<h2 className="folowers__title">Мои подписчики</h2>
+				{folowerData && folowerData.map((item) => <p className="followers__name">{item.email}</p>)}
+			</div>
 		</section>
 	);
 };

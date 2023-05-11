@@ -29,16 +29,12 @@ const GreenHousePage = () => {
 			<main className="house">
 				<div className="house__top">
 					<div className="house__content">
-						<h1 className="house__title">Green kitchen</h1>
+						<h1 className="house__title">Зеленая кухня</h1>
 					</div>
 				</div>
 				<div className="house__bottom">
 					<div className="house__bottom-wrapper">
-						<p className="house__bottom-caption">Kitchen made in
-							shades of green
-							with an abundance
-							of vegetation
- 						</p>
+						<p className="house__bottom-caption">Кухня в зеленых тонах с обилием растительности</p>
 						<img src={i1} alt="" className="house__bottom-image" />
 					</div>
 				</div>

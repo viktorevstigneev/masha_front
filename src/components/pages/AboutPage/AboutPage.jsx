@@ -26,25 +26,24 @@ const AboutPage = () => {
 		<>
 			<main className="about">
 				<div className="about__top">
-					<h1 className="about__title">Yanushko Maria</h1>
+					<h1 className="about__title">Янушко мария</h1>
 				</div>
 				<div className="about__bottom">
 					<div className="about_left">
-						<h2 className="about__name">About Me</h2>
+						<h2 className="about__name">Обо мне</h2>
 						<p className="about__caption">
-							Creating a design of various kinds is an art. Behind each of my work is a lot of time and effort that I
-							spend to create.Never force yourself to do something you don't want to. The main thing is to find
-							yourself.My name is Maria and I am 18 years old. I do interior design for my own pleasure and get a lot of
-							positive emotions from it. I try not to stand still and move forward, developing my skills more and more.
-							In the end, even small steps lead you to your destination.
+							Создание дизайна разного рода – это искусство. За каждой моей работой стоит много времени и сил, которые я
+							тратить на создание. Никогда не заставляйте себя делать то, что вам не хочется. Главное найти себя.Меня
+							зовут Мария и мне 18 лет. Я занимаюсь дизайном интерьеров в свое удовольствие и получаю много
+							положительные эмоции от него. Стараюсь не стоять на месте и двигаться вперед, все больше и больше развивая
+							свои навыки. В конце концов, даже маленькие шаги приведут вас к цели.
 						</p>
 					</div>
 					<img className="about__right" src={i1} alt="" />
 				</div>
 			</main>
-		
+
 			{/* <Footer /> */}
-			
 		</>
 	);
 };

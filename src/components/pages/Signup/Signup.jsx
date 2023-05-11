@@ -20,37 +20,37 @@ const SignUp = () => {
 		<Navigate push to={`/main`} />
 	) : (
 		<div className='auth'>
-			<h2 className="auth__title">Sign Up</h2>
+			<h2 className="auth__title">Регистрация</h2>
 			<div className="auth__block">
 				<form className="auth__form" action={API_URL} method="POST" onSubmit={handleFormSubmit}>
 					<label className="auth__label" htmlFor="username">
-						Login
+						Логин
 					</label>
 					<input
 						className="auth__input"
 						name="username"
 						id="username"
-						placeholder="Login"
+						placeholder="логин"
 						type="text"
 						required={true}
 					/>
 					<label className="auth__label" htmlFor="password">
-						Password
+						Пароль
 					</label>
 					<input
 						className="auth__input"
 						name="password"
 						id="password"
-						placeholder="Password"
+						placeholder="пароль"
 						type="password"
 						required={true}
 					/>
 					<button className="auth__button" type="submit">
-						sign up
+						зарегистироваться
 					</button>
 
 					<Link className="auth__link" to="/signin">
-						already have profile? Sign in
+						войти?
 					</Link>
 				</form>
 			
