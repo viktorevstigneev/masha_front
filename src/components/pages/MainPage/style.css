@@ -4,42 +4,42 @@
 }
 
 .arrow-down {
-    width: 100px;
+	width: 100px;
 	margin: 0 auto;
 	margin-top: 30px;
 }
 .arrow-down span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #dadada;
-    border-right: 5px solid #929292;
-    transform: rotate(45deg);
-    /* margin: -16px; */
-    animation: arrow-down 2s infinite;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-bottom: 5px solid #dadada;
+	border-right: 5px solid #929292;
+	transform: rotate(45deg);
+	/* margin: -16px; */
+	animation: arrow-down 2s infinite;
 }
-.arrow-down span:nth-child(2){
-    animation-delay: -0.2s;
+.arrow-down span:nth-child(2) {
+	animation-delay: -0.2s;
 }
-.arrow-down span:nth-child(3){
-    animation-delay: -0.4s;
+.arrow-down span:nth-child(3) {
+	animation-delay: -0.4s;
 }
 @keyframes arrow-down {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
 }
 
 .home__container {
-	/* background: #131313; */
+	background: #000000;
 	/* padding: 20px; */
 	width: 100%;
 	margin: 0 auto;
@@ -47,7 +47,7 @@
 
 .home__main {
 	padding: 20% 0;
-	background: linear-gradient(#0707077a, #0000001f) ,url('../../../img/bbb.jpg') 50% no-repeat;
+	background: linear-gradient(#0707077a, #0000001f), url('../../../img/maimpagebg.png') 50% no-repeat;
 	background-size: cover;
 }
 
@@ -57,6 +57,16 @@
 	color: white;
 	font-weight: 600;
 	font-size: 30px;
+
+	width: 50%;
+	margin: 0 auto;
+}
+
+.home__cnt {
+	width: 60%;
+	background: #0000006b;
+	padding: 50px;
+	margin: 0 auto;
 }
 
 .home__title {
@@ -65,13 +75,12 @@
 	text-align: center;
 	font-weight: 500;
 	position: relative;
-	color: #000000;;
-
+	color: #ffffff;
 }
 
-.home__title::after{
+.home__title::after {
 	position: absolute;
-	content: "";
+	content: '';
 	display: block;
 	left: 150px;
 	bottom: -10px;
@@ -83,8 +92,16 @@
 .home__projects {
 	display: flex;
 	/* justify-content: spac; */
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
+	align-items: center;
+}
+
+.home__pj{
+	color: white;
+	width: 20%;
+	font-size: 21px;
+	line-height: 30px;
 }
 
 .projects__left {
@@ -112,48 +129,47 @@
 	width: 100%;
 }
 
-.home__about{
+.home__about {
 	/* width: 100%; */
 	margin: 0 auto;
 	margin-top: 50px;
 	padding: 10px;
 	display: flex;
-	
 }
 
-.about__left{
+.about__left {
 	color: rgb(29, 29, 29);
 	text-align: left;
 	padding-left: 70px;
 	width: 50%;
 }
 
-.about__description{
+.about__description {
 	text-align: left;
 	width: 70%;
 	margin-bottom: 30px;
 }
 
-.about__right{
+.about__right {
 	height: 500px;
 	/* width: 40%; */
 }
 
-.about__button{
+.about__button {
 	text-decoration: none;
 	color: rgb(27, 27, 27);
 	border: 1px solid rgb(27, 27, 27);
 	padding: 10px 20px;
-	transition: border-radius 3s,  background 1s;
+	transition: border-radius 3s, background 1s;
 }
 
-.about__button:hover{
+.about__button:hover {
 	color: rgb(255, 255, 255);
 	background: #000000;
 	border-radius: 100px;
 }
 
-.services__title{
+.services__title {
 	text-align: center;
 	background: rgba(49, 49, 49, 0.199);
 	color: #000000;
@@ -163,19 +179,18 @@
 	font-weight: 400;
 }
 
-.services__wrapper{
+.services__wrapper {
 	display: flex;
 	justify-content: space-between;
 }
 
-.services__content{
+.services__content {
 	width: 48%;
 	text-align: center;
 	position: relative;
-	
 }
 
-.services__image{
+.services__image {
 	width: 100%;
 	filter: drop-shadow(1px 1px 2px red) invert(80%);
 	/* filter: blur(1px); */
@@ -183,7 +198,7 @@
 	object-fit: cover;
 }
 
-.services__caption{
+.services__caption {
 	position: absolute;
 	top: 20%;
 	left: 20%;
@@ -192,30 +207,29 @@
 	color: #dadada;
 }
 
-.services__content:hover .services__image{
+.services__content:hover .services__image {
 	filter: none;
 }
 
-.services__content:hover .services__caption{
+.services__content:hover .services__caption {
 	font-size: 24px;
 	border-bottom: 1px solid #00eeff;
 }
 
-.home__subscribe{
+.home__subscribe {
 	width: 60%;
 	height: 200px;
 	margin: 0 auto;
 	margin-top: 70px;
 }
 
-
-.subscribe__label{
+.subscribe__label {
 	text-align: center;
 	text-transform: uppercase;
 	display: block;
 	margin-bottom: 20px;
 }
-.subscribe__input{
+.subscribe__input {
 	display: block;
 	padding: 10px;
 	background: #cfcfcf;
@@ -224,11 +238,11 @@
 	border: 1px solid rgb(255, 255, 255);
 }
 
-.subscribe__input::placeholder{
+.subscribe__input::placeholder {
 	color: rgb(0, 0, 0);
 }
 
-.subscribe__btn{
+.subscribe__btn {
 	margin-top: 30px;
 	display: block;
 	width: 100%;
@@ -237,13 +251,12 @@
 	cursor: pointer;
 	transition: 1s;
 
-
 	color: rgb(0, 0, 0);
 	border-radius: 10px;
 	border: none;
 }
 
-.subscribe__btn:hover{
+.subscribe__btn:hover {
 	background: rgb(115, 98, 160);
 	color: rgb(255, 255, 255);
 	border-radius: 100px;

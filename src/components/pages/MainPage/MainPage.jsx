@@ -23,21 +23,31 @@ const MainPage = ({ user }) => {
 			<main className="home">
 				<div className="home__container">
 					<div className="home__main">
-						<p className="home__name">Янушко Мария интерьерный дизайнер</p>
-						<p className="home__name">Будь смелым. Стилизуй свою жизнь</p>
-						<div class="arrow-down">
-							<span></span>
-							<span></span>
-							<span></span>
+						{/* <p className="home__name">Янушко Мария интерьерный дизайнер</p> */}
+						<div className="home__cnt">
+							<p className="home__name">
+								Мои дизайны это место, где творчество не знает границ и встречаются воображение и искусство
+							</p>
 						</div>
+						{/* <div class="arrow-down">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div> */}
 					</div>
 
 					<h1 className="home__title">Мои проекты</h1>
 					<div className="home__projects">
+						<p className="home__pj">
+							Если вам хотелось бы понять, подхожу ли я вам как дизайнер - вы можете изучить мои проекты
+							<a className="about__button" href="/about">
+								Узнать больше
+							</a>
+						</p>
 						<ImageSlider data={projData} />
 					</div>
 
-					<div className="home__about">
+					{/* <div className="home__about">
 						<div className="about__left">
 							<h2 className="about__titlee">Обо мне</h2>
 
@@ -53,9 +63,9 @@ const MainPage = ({ user }) => {
 							</a>
 						</div>
 						<img src={me} alt="" className="about__right" />
-					</div>
+					</div> */}
 
-					<div className="home__services">
+					{/* <div className="home__services">
 						<h2 className="services__title">Мои услуги</h2>
 						<div className="services__wrapper">
 							<div className="services__content">
@@ -67,7 +77,7 @@ const MainPage = ({ user }) => {
 								<p className="services__caption">Преображение маленького пространства</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
 					{user && user ? (
 						<div className="home__subscribe">

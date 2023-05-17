@@ -1,9 +1,9 @@
 .slider {
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
-	margin-top: 70px;
+	/* margin-top: 70px; */
 	padding: 10px 50px;
-	background: #c7c7c7;
+	/* background: #c7c7c7; */
 }
 
 .slick-slider {
@@ -94,7 +94,7 @@
 }
 
 .slider__image {
-	width: 60%;
+	width: 100%;
 	object-fit: cover;
 	height: 350px;
 	display: block;
