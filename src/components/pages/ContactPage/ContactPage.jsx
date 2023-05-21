@@ -28,9 +28,9 @@ const Music = ({ loadTeamData, team, match }) => (
 						withCredentials: true,
 					});
 
-					// if (responseData.status == 200) {
-					// 	location.reload();
-					// }
+					if (responseData.status == 200) {
+						window.location.reload();
+					}
 				}}
 			>
 				<label className="music__label" htmlFor="name" required="true">
