@@ -1,6 +1,6 @@
 .header {
 	/* background: rgb(53, 53, 53); */
-	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.726);
 	position: fixed;
 	top: 0;
 	width: 100%;

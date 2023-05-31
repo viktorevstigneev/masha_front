@@ -6,7 +6,7 @@ import axios from 'axios';
 import './style.css';
 
 import { API_URL } from '../../../constants';
-import m1 from '../../../img/logo.png'
+import m1 from '../../../img/logo.png';
 
 const Header = ({ user }) => {
 	// const [user, setUser] = useState(userC);
@@ -42,9 +42,13 @@ const Header = ({ user }) => {
 						Обо мне
 					</Link>
 
-					<Link className="header__link" to="/works">
-						Все мои работы
+					<Link className="header__link" to="/servise">
+						Дизайнерские услуги
 					</Link>
+
+					{/* <Link className="header__link" to="/works">
+						Все мои работы
+					</Link> */}
 					<Link className="header__link" to="/advise">
 						Советы
 					</Link>

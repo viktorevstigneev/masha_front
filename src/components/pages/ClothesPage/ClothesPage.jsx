@@ -49,7 +49,7 @@ const ClothesPage = ({ user }) => {
 		setName(activeCard?.name);
 		setDesc(activeCard?.description);
 		setRoomType(activeCard?.roomType);
-		setStyleType(activeCard?.styleType);
+		// setStyleType(activeCard?.styleType);
 	}, [activeCard]);
 
 	const handleModalWindowCloseButtonClick = useCallback((evt) => {
@@ -68,7 +68,7 @@ const ClothesPage = ({ user }) => {
 			<main className="clothes">
 				<div className="clothes__container">
 					<div className="clothes__filter">
-						Фильтровать по типу стиля
+						{/* Фильтровать по типу стиля
 						<select
 							className="admin__text-input"
 							name="styleType"
@@ -83,7 +83,7 @@ const ClothesPage = ({ user }) => {
 									{color.id}
 								</option>
 							))}
-						</select>
+						</select> */}
 						Фильтровать по типу помещения
 						<select
 							className="admin__text-input"

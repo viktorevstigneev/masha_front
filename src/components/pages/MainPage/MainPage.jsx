@@ -40,14 +40,14 @@ const MainPage = ({ user }) => {
 					<div className="home__projects">
 						<p className="home__pj">
 							Если вам хотелось бы понять, подхожу ли я вам как дизайнер - вы можете изучить мои проекты
-							<a className="pj__button" href="/works">
+							<a className="pj__button" href="/about">
 								 Больше
 							</a>
 						</p>
 						<ImageSlider data={projData} />
 					</div>
 
-					<div className="home__about">
+					{/* <div className="home__about">
 						<div className="about__left">
 							<h2 className="about__titlee">Обо мне</h2>
 
@@ -63,7 +63,7 @@ const MainPage = ({ user }) => {
 							</a>
 						</div>
 						<img src={me} alt="" className="about__right" />
-					</div>
+					</div> */}
 
 					<div className="home__services">
 						<h2 className="services__title">Мои услуги</h2>

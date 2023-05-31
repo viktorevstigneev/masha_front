@@ -1,0 +1,63 @@
+.sv {
+	/* background: url('../../../img/main_bg.png') 50% no-repeat; */
+	/* background-size: cover; */
+}
+
+.sv__container {
+	background: #ffffff;
+	/* padding: 20px; */
+	width: 100%;
+	margin: 0 auto;
+}
+
+.sv__main {
+	padding: 20% 0;
+	background: linear-gradient(#0707077a, #0000001f), url('../../../img/maimpagebg.png') 50% no-repeat;
+	background-size: cover;
+}
+
+.sv__name {
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+	font-size: 30px;
+
+	width: 50%;
+	margin: 0 auto;
+}
+
+.sv__cnt {
+	width: 80%;
+	/* background: #0000006b; */
+	padding: 50px;
+	margin: 0 auto;
+}
+
+.sv__title {
+	width: 30%;
+	margin: 60px auto;
+	text-align: center;
+	font-weight: 500;
+	position: relative;
+	color: #000000;
+}
+
+.sv__title::after {
+	position: absolute;
+	content: '';
+	display: block;
+	left: 150px;
+	bottom: -10px;
+	width: 100px;
+	background: #252525;
+	height: 1px;
+}
+
+.sv__img_wr {
+	background: #272727;
+}
+
+.sv__img_wr .slider {
+	width: 90%;
+}

@@ -1,0 +1,31 @@
+.CourseTabHeader {
+	display: flex;
+	cursor: pointer;
+}
+
+.CourseShowBtn {
+	background: transparent;
+	border: none;
+	color: #6c5dd3;
+}
+
+.CourseTabContent {
+	margin-top: 0;
+	border-top: 1px solid black;
+	padding-top: 10px;
+}
+
+.CourseTabTaskContent {
+	margin-top: 0;
+	padding-top: 10px;
+	position: relative;
+	margin-left: 25px;
+}
+.CourseTabTaskContent::before {
+	content: '!?';
+	color: green;
+	font-size: 28px;
+	position: absolute;
+	top: 10px;
+	left: -29px;
+}

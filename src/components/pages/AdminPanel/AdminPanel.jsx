@@ -15,16 +15,7 @@ export const ROOM_TYPE = [
 		id: 'Дом',
 	},
 	{
-		id: 'Дача',
-	},
-	{
-		id: 'Вилла',
-	},
-	{
-		id: 'Ванная комната',
-	},
-	{
-		id: 'Зал',
+		id: 'Сан узел',
 	},
 	{
 		id: 'Спальня',
@@ -47,12 +38,14 @@ export const STYLE_TYPE = [
 	{
 		id: 'Минимализм',
 	},
+	{
+		id: 'Этно',
+	},
 ];
 
 const AdminPanel = () => {
 	const [file, setFile] = useState('');
 	const [folowerData, setFolloweData] = useState();
-
 
 	useEffect(() => {
 		const getFollowers = async () => {

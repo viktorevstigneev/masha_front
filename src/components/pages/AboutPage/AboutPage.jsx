@@ -6,12 +6,16 @@ import Spinner from '../../common/Spinner';
 import './style.css';
 
 // import { sliderData } from './data';
-import i1 from '../../../img/about2.png';
+import i1 from '../../../img/me_1.JPG';
+import i2 from '../../../img/me_2.JPG';
+import i3 from '../../../img/me_3.JPG';
+import i4 from '../../../img/me_4.jpg';
 
 import axios from 'axios';
 import { API_URL } from '../../../constants';
+import ClothesPage from '../ClothesPage/ClothesPage';
 
-const AboutPage = () => {
+const AboutPage = ({user}) => {
 	// const [bannerData, setBannerData] = useState();
 
 	// useEffect(() => {
@@ -26,7 +30,11 @@ const AboutPage = () => {
 		<>
 			<main className="about">
 				<div className="about__top">
-					<h1 className="about__title">Янушко мария</h1>
+					<h1 className="about__title">
+						Янушко мария
+						<br /> крутой Дизайнер интерьера,
+						<br /> гениальный фотограф и просто хороший человек
+					</h1>
 				</div>
 				<div className="about__bottom">
 					<div className="about_left">
@@ -39,8 +47,19 @@ const AboutPage = () => {
 							свои навыки. В конце концов, даже маленькие шаги приведут вас к цели.
 						</p>
 					</div>
-					<img className="about__right" src={i1} alt="" />
+					<div className="about__right">
+						<img className="about__img f1" width="500" src={i1} alt="" />
+						<div className="about__img_wrapper">
+							<img className="about__img" src={i2} width="250" alt="" />
+							<img className="about__img" src={i3} width="250" alt="" />
+						</div>
+						{/* <img className="about__img f4" src={i4} width="500" alt="" /> */}
+					</div>
 				</div>
+
+				<h1 className="about__head">Мои работы</h1>
+
+				<ClothesPage user={user}/>
 			</main>
 
 			{/* <Footer /> */}

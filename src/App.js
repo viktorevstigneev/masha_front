@@ -46,13 +46,12 @@ const BrightBathroomPage = lazy(() => import('./components/pages/BrightBathroomP
 const ClothesPage = lazy(() => import('./components/pages/ClothesPage'));
 // const ProfilePage = lazy(() => import('./components/pages/ProfilePage'));
 const AdminPage = lazy(() => import('./components/pages/AdminPanel'));
+const ServisePage = lazy(() => import('./components/pages/ServisePage'));
 // const CartPage = lazy(() => import('./components/pages/CartPage'));
 
 function App() {
-
 	const [user, setUser] = useState();
 
-	
 	useEffect(() => {
 		const getCurrentUser = async () => {
 			const responseData = await axios
@@ -106,9 +105,11 @@ function App() {
 					{/* <Route path="/profile" element={<ProfilePage />} /> */}
 					<Route path="/admin" element={<AdminPage />} />
 					<Route path="/works" element={<ClothesPage user={user} />} />
-					<Route path="/about" element={<AboutPage />} />
+					<Route path="/about" element={<AboutPage user={user} />} />
 
 					<Route path="/contact" element={<ContactPage />} />
+
+					<Route path="/servise" element={<ServisePage />} />
 				</Routes>
 				{/* <Navigate  to="/main" /> */}
 			</Suspense>
